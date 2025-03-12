@@ -1,0 +1,1 @@
+class NonZeroError(Exception):pass
