@@ -2,6 +2,7 @@ from ATM_Menu import printMenu
 from ATM_Exceptions import NonNegativeError,NonZeroError,InvalidChoice
 from ATM_Operations import deposit,withDraw,balanceEnquiry,exit
 try:    
+    
     balance=float(10000)
     printMenu()
     
@@ -26,6 +27,7 @@ except NonNegativeError:
      print("Please don't enter negative value")
 except NonZeroError:
      print("Please don't enter zero value")
+    
 except InvalidChoice:
      print("Please enter the valid choice [1,2,3,4]")
 finally:

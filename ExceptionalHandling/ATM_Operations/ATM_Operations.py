@@ -1,18 +1,21 @@
 from ATM_Exceptions import NonZeroError,NonNegativeError
+currentBalance=0.0
 def deposit(balance,depositAmount):
-    currentBalance=0.0
+    global currentBalance
+    currentBalance=balance
     if(deposit==0):
         raise NonZeroError
     elif(balance<0 or depositAmount<0):
         raise NonNegativeError
     elif(balance>=0 and depositAmount>0 ):
         currentBalance=balance+depositAmount
-    print('Your current balance is {}'.format(currentBalance))
-    return currentBalance
+        print('Your current balance is {}'.format(currentBalance))
+        return currentBalance
 
 
 def withDraw(balance,withdrawAmount):
-    currentBalance=0.0
+    global currentBalance
+    currentBalance=balance
     if(balance==0 or balance<withdrawAmount):
         print("You don't have sufficient Balance to you withdraw")
     elif(withdrawAmount==0):
@@ -21,7 +24,8 @@ def withDraw(balance,withdrawAmount):
         raise NonNegativeError
     elif(balance>=withdrawAmount):
         currentBalance=balance-withdrawAmount
-        return currentBalance
+        print('You have withdraw your amount sucessfully')
+    return currentBalance
 
 
 def balanceEnquiry(balance):
