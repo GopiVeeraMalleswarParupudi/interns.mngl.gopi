@@ -1,0 +1,15 @@
+[10, 20, 0, 40, 50]
+10	20	40	50	
+Type of data : <class 'list'>
+------------------------------------------------------------
+{0, 50, 20, 40, 10}
+20	10	50	40	
+Type of data : <class 'set'>
+------------------------------------------------------------
+{10: 'ten', 20: 'twenty', 30: 'thirty', 40: 'fourty', 50: 'fifty'}
+dict_keys([10, 20, 30, 40, 50])
+10	20	30	40	50	
+dict_values(['ten', 'twenty', 'thirty', 'fourty', 'fifty'])
+ten	twenty	thirty	fourty	fifty	
+Type of data : <class 'dict'>
+------------------------------------------------------------

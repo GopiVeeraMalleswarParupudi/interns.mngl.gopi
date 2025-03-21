@@ -1,9 +1,7 @@
-'''
-write a program which will demonstrates how to write the data to the file.
-'''
 try:
-    with open('file2.txt','w') as file:
-        l=[10,'hello','world','qwqw','ewdwed','yfyff']
-        file.writelines(list(map(lambda s : str(s),l)))
-except Exception as e:
-    print(e)
+    filePath='D:/PythonFullStack/CorePython/FileHandling/file1.txt'
+    file=open(filePath,'w')
+except FileNotFoundError:
+    print('File is not available at your provided location.')
+else:
+    print('File with name "{}"is opened sucessfully in writemode'.format(file.name))

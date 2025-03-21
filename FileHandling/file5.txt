@@ -1,0 +1,9 @@
+hello	world
+i am learning python
+What topic are you interested in?
+It could be something related to Java, 
+Spring Boot, Python, web development, 
+or even something random like space, 
+history, 
+or technology trends. 
+Let me know! 😊

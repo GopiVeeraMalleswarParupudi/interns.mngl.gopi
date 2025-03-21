@@ -1,11 +1,8 @@
-'''
-write a program which will read the data dynamically from keyboard and write it to the file.
-'''
-
 try:
-    with open('file3.txt','w') as file:
-        
-        while(True):   
-            file.write(text) if (text:=(input('Enter you data : ')))!='' else print('Please enter the valid data')
-except Exception as e:
-    print(e)
+    filePath='D:/PythonFullStack/CorePython/FileHandling/file1.txt'
+    with open(filePath,'r') as file:
+        print('File opened in read mode sucessfully')
+except FileNotFoundError:
+    print('File does not exist')
+else:
+    print('Type of file : ',type(file))
